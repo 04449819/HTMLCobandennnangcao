@@ -106,17 +106,24 @@ body {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.card__action button:hover {
+  transform: scale(1.06);
 }
 
 .card:hover .card__img {
   transform: translateY(-35px) rotate(-20deg);
+  transition-delay: 0.2s;
 }
 
 .card:hover .card__tillte {
   transform: translate(-50px, -30px);
+  transition-delay: 0.2s;
 }
 .card:hover .card__price {
   transform: translate(-125px, -30px);
+  transition-delay: 0.2s;
 }
 
 .card__size {
@@ -135,4 +142,5 @@ body {
 .card:hover .card__action {
   transform: translateY(-120px); /* Dịch chuyển khi hover */
   opacity: 1; /* Hiện khi hover */
+  transition-delay: 0.2s;
 }
