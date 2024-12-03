@@ -1,0 +1,66 @@
+.wrapper {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 80px auto;
+  justify-content: space-between;
+  &__images {
+    width: 22%;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 20px 0px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.Control {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, gray, white);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+  opacity: 0%;
+  &__Content {
+    width: 60%;
+    height: auto;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__Exit {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    cursor: pointer;
+  }
+  &__prev {
+    margin-right: 250px;
+    cursor: pointer;
+  }
+
+  &__next {
+    margin-left: 250px;
+    cursor: pointer;
+  }
+  &__hienthi {
+    visibility: visible;
+    opacity: 100%;
+  }
+}
